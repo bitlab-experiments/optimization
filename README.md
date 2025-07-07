@@ -97,3 +97,21 @@ where:
 
 **Principle:**
 Minimizing $E$ guides the network toward stable attractor states, enabling it to recall patterns from partial or noisy inputs. It’s an early example of energy-based learning.
+
+### 5. [Graph Cuts for Image Segmentation](https://en.wikipedia.org/wiki/Graph_cuts_in_computer_vision) - Computer Vision
+
+**Equation:**
+
+$$
+E(L) = \sum_{(p,q) \in N} V_{pq}(L_p, L_q) + \sum_{p} D_p(L_p)
+$$
+
+where:
+- $E(L)$: Total energy for a labeling $L = \{L_p\}$.
+- $L_p$: Label assigned to pixel $p$ (e.g. foreground or background).
+- $D_p(L_p)$: Data term — cost of assigning label $L_p$ to pixel $p$, encourages data fidelity.
+- $V_{pq}(L_p, L_q)$: Smoothness term — cost of label discontinuity between neighboring pixels $p$ and $q$, encourages label coherence.
+- $N$: Set of adjacent pixel pairs (i.e. edges in the image grid graph).
+
+**Principle:**
+Minimizing $E(L)$ balances fidelity to observed data (e.g. pixel intensities) with spatial smoothness (encouraging neighboring pixels to share labels).
