@@ -4,7 +4,6 @@
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
-* [Table of content](#table-of-content)
 * [First Principle](#first-principle)
 * [Mechanism](#mechanism)
 * [Solution](#solution)
