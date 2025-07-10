@@ -51,7 +51,7 @@ $$
 or in matrix-vector notation:
 
 $$
-E(b) = \alpha\, b^{T} Ab + \beta\, C^{T}b
+E(b) = \alpha b^{T}Ab + \beta C^{T}b
 $$
 
 can diverge into two types of behavior:
