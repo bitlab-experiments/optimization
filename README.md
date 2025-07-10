@@ -35,12 +35,12 @@ npm run build
 
 ### Example (Node.js)
 ```js
-const { create_model } = require('./index.node');
+const { createModel } = require('./index.node');
 const alpha = 1.0, beta = 0.5;
 const a = [[1, 0], [0, 1]];
 const b = [1, -1];
 const c = [0.2, 0.3];
-const model = create_model(alpha, beta, a, b, c);
+const model = createModel(alpha, beta, a, b, c);
 console.log(model.score); // Energy value
 ```
 
